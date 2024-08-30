@@ -20,6 +20,7 @@ return {
   --  This plugin allow to move lines of code with <A-h> <A-j>
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.pack.dart" },
+  { import = "astrocommunity.pack.java" },
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",

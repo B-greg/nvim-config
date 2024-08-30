@@ -67,7 +67,7 @@ return {
         -- Telescope
         ["<C-p>"] = { "<cmd>Telescope fd<CR>", desc = "Activates Telescope fd" },
         ["<M-p>"] = { "<cmd>Telescope commands<CR>", desc = "Activates Telescope commands" },
-        ["<C-f>"] = { "<cmd>Telescope live_grep<CR>", desc = "Activates Telescope live_grep" },
+        ["<M-f>"] = { "<cmd>Telescope live_grep<CR>", desc = "Activates Telescope live_grep" },
 
         -- Spectre
         ["<leader>fs"] = { desc = "Spectre" },
