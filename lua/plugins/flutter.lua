@@ -1,5 +1,6 @@
 return {
   "nvim-neotest/neotest",
+  lazy = true,
   requires = {
     "B-greg/neotest-dart",
   },

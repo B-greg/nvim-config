@@ -21,9 +21,11 @@ return {
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.typescript" },
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",
+    lazy = true,
     opts = {
       lsp = {
         settings = {
