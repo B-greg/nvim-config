@@ -19,8 +19,8 @@ return {
       -- your neotest config here
       adapters = {
         require "neotest-go",
-        require "neotest-rust",
-        require "neotest-python",
+        -- require "neotest-rust",
+        -- require "neotest-python",
         require "neotest-dart" {
           command = " flutter", -- Command being used to run tests. Defaults to `flutter`
           -- Change it to `fvm flutter` if using FVM
