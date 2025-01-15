@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.helm" },
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",
