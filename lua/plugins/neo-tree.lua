@@ -4,7 +4,7 @@ return {
     opts = {
       window = {
         position = "left",
-        width = "20%", -- Adjust this number as needed
+        width = "17%", -- Adjust this number as needed
       },
     },
   },
