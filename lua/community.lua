@@ -28,7 +28,7 @@ return {
   { import = "astrocommunity.pack.helm" },
   -- { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
-
+  { import = "astrocommunity.search.nvim-spectre" },
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",

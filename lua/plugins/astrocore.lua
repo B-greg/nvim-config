@@ -91,18 +91,6 @@ return {
         ["<C-p>"] = { '<cmd>lua require("snacks").picker.smart()<CR>', desc = "Smart Find Files" },
         -- ["<M-p>"] = { "<cmd>Telescope commands<CR>", desc = "Activates Telescope commands" },
         -- ["<M-f>"] = { "<cmd>Telescope live_grep<CR>", desc = "Activates Telescope live_grep" },
-        --
-        -- Spectre
-        ["<leader>fs"] = { desc = "Spectre" },
-        ["<leader>fss"] = { '<cmd>lua require("spectre").toggle()<CR>', desc = "Toggle Spectre" },
-        ["<leader>fsp"] = {
-          '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>',
-          desc = "Search on current file",
-        },
-        ["<leader>fsw"] = {
-          '<cmd>lua require("spectre").open_visual({select_word=true})<CR>',
-          desc = "Search current word",
-        },
 
         -- Neotest
         ["<leader>T"] = { desc = utils.get_icon("󰂓", "", 1) .. "Test" },
