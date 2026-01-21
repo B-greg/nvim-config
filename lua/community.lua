@@ -26,7 +26,6 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.helm" },
-  { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.search.nvim-spectre" },
