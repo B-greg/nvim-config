@@ -1,6 +1,7 @@
 return {
   "B-greg/nvim-platformio.lua",
   branch = "feature/astrovim",
+  lazy = true,
   -- optional: cond used to enable/disable platformio
   -- based on existance of platformio.ini file and .pio folder in cwd.
   -- You can enable platformio plugin, using :Pioinit command

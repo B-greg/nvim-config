@@ -7,9 +7,9 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.lua", lazy = true },
   -- import/override with your plugins folder
-  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.rust", lazy = true },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
@@ -21,14 +21,16 @@ return {
   --  { import = "astrocommunity.completion.copilot-lua-cmp" },
   --  This plugin allow to move lines of code with <A-h> <A-j>
   { import = "astrocommunity.motion.mini-move" },
-  { import = "astrocommunity.pack.dart" },
-  { import = "astrocommunity.pack.java" },
-  { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.helm" },
-  -- { import = "astrocommunity.recipes.ai" },
+  { import = "astrocommunity.pack.dart", lazy = true },
+  { import = "astrocommunity.pack.java", lazy = true },
+  { import = "astrocommunity.pack.python", lazy = true },
+  { import = "astrocommunity.pack.typescript", lazy = true },
+  { import = "astrocommunity.pack.helm", lazy = true },
+  { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.git.blame-nvim", lazy = true },
+  { import = "astrocommunity.git.git-blame-nvim", lazy = true },
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",

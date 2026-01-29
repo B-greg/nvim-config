@@ -1,3 +1,4 @@
+-- disable copilot as it's handle by astrocommunity.completion.copilot-lua-cmp
 if true then return {} end
 
 ---@type LazySpec

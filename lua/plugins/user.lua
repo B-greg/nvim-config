@@ -22,8 +22,16 @@ return {
           if vim.fn.executable "atac" == 1 then posting = "atac" end
         end
         if vim.fn.executable(posting) == 1 then
-          maps.n["<Leader>tP"] =
-            { function() astro.toggle_term_cmd { cmd = posting, direction = "float" } end, desc = "ToggleTerm posting" }
+          maps.n["<Leader>tP"] = {
+            function()
+              local cmd = posting
+              -- Check if "posting" folder exists in the project root
+              local posting_folder = vim.fn.getcwd() .. "/posting"
+              if vim.fn.isdirectory(posting_folder) == 1 then cmd = posting .. " --collection posting" end
+              astro.toggle_term_cmd { cmd = cmd, direction = "float" }
+            end,
+            desc = "ToggleTerm posting",
+          }
         end
         if vim.fn.executable "rainfrog" == 1 then
           maps.n["<Leader>tr"] = {
