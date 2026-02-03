@@ -1,3 +1,4 @@
+local utils = require "utils.init"
 return {
   "NickvanDyke/opencode.nvim",
   dependencies = {
@@ -32,7 +33,12 @@ return {
 
     -- Recommended/example keymaps.
 
-    vim.keymap.set({ "n", "x" }, "<leader>ac", function() require "opencode" end, { desc = "OpenCode" })
+    vim.keymap.set(
+      { "n", "x" },
+      "<leader>ac",
+      function() require "opencode" end,
+      { desc = utils.get_icon("󰨔", "", 1) .. "OpenCode" }
+    )
     vim.keymap.set(
       { "n", "x" },
       "<leader>aca",

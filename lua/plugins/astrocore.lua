@@ -1,6 +1,6 @@
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
-local utils = require "utils"
+local utils = require "utils.init"
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -108,8 +108,8 @@ return {
         },
 
         -- Copilot Chat
-        ["<leader>a"] = { desc = utils.get_icon("󰂓", "", 1) .. "AI" },
-        ["<leader>ap"] = { desc = utils.get_icon("󰂓", "", 1) .. "Copilot" },
+        ["<leader>a"] = { desc = utils.get_icon("󰙴", "", 1) .. "AI" },
+        ["<leader>ap"] = { desc = utils.get_icon("", "", 1) .. "Copilot" },
         ["<leader>apt"] = { '<cmd>lua require("CopilotChat").toggle()<CR>', desc = "Toggle Copilot Chat" },
         ["<leader>apo"] = { '<cmd>lua require("CopilotChat").open()<CR>', desc = "Open Copilot Chat" },
         ["<leader>apm"] = { '<cmd>lua require("CopilotChat").select_model()<CR>', desc = "Select Model" },
