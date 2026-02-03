@@ -3,10 +3,11 @@ return {
   cmd = "Gemini",
   -- Example key mappings for common actions:
   keys = {
-    { "<leader>a/", "<cmd>Gemini toggle<cr>", desc = "Toggle Gemini CLI" },
-    { "<leader>aa", "<cmd>Gemini ask<cr>", desc = "Ask Gemini", mode = { "n", "v" } },
-    { "<leader>af", "<cmd>Gemini add_file<cr>", desc = "Add File" },
-    { "<leader>ag", "<cmd>Gemini<cr>", desc = "Open Gemini" },
+    { "<leader>ag", desc = "Gemini" },
+    { "<leader>agt", "<cmd>Gemini toggle<cr>", desc = "Toggle Gemini CLI" },
+    { "<leader>aga", "<cmd>Gemini ask<cr>", desc = "Ask Gemini", mode = { "n", "v" } },
+    { "<leader>agf", "<cmd>Gemini add_file<cr>", desc = "Add File" },
+    { "<leader>ago", "<cmd>Gemini<cr>", desc = "Open Gemini" },
   },
   dependencies = {
     "folke/snacks.nvim",

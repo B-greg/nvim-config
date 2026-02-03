@@ -108,11 +108,12 @@ return {
         },
 
         -- Copilot Chat
-        ["<leader>a"] = { desc = utils.get_icon("󰂓", "", 1) .. "Copilot" },
-        ["<leader>at"] = { '<cmd>lua require("CopilotChat").toggle()<CR>', desc = "Toggle Copilot Chat" },
-        ["<leader>ao"] = { '<cmd>lua require("CopilotChat").open()<CR>', desc = "Open Copilot Chat" },
-        ["<leader>am"] = { '<cmd>lua require("CopilotChat").select_model()<CR>', desc = "Select Model" },
-        ["<leader>ar"] = { '<cmd>lua require("CopilotChat").reset()<CR>', desc = "Reset the Chat" },
+        ["<leader>a"] = { desc = utils.get_icon("󰂓", "", 1) .. "AI" },
+        ["<leader>ap"] = { desc = utils.get_icon("󰂓", "", 1) .. "Copilot" },
+        ["<leader>apt"] = { '<cmd>lua require("CopilotChat").toggle()<CR>', desc = "Toggle Copilot Chat" },
+        ["<leader>apo"] = { '<cmd>lua require("CopilotChat").open()<CR>', desc = "Open Copilot Chat" },
+        ["<leader>apm"] = { '<cmd>lua require("CopilotChat").select_model()<CR>', desc = "Select Model" },
+        ["<leader>apr"] = { '<cmd>lua require("CopilotChat").reset()<CR>', desc = "Reset the Chat" },
       },
     },
   },
