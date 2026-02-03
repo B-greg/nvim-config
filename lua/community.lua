@@ -25,6 +25,7 @@ return {
   { import = "astrocommunity.pack.java", lazy = true },
   { import = "astrocommunity.pack.python", lazy = true },
   { import = "astrocommunity.pack.typescript", lazy = true },
+  { import = "astrocommunity.pack.go", lazy = true },
   { import = "astrocommunity.pack.helm", lazy = true },
   { import = "astrocommunity.recipes.ai" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
