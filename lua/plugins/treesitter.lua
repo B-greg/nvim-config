@@ -1,6 +1,5 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Treesitter
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 ---@type LazySpec
 return {
@@ -10,6 +9,10 @@ return {
     ensure_installed = {
       "lua",
       "vim",
+      "query",
+      "vimdoc",
+      "markdown",
+      "markdown_inline",
       -- add more arguments for adding more treesitter parsers
     },
   },

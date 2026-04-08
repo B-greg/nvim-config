@@ -22,6 +22,9 @@ return {
 
         -- install any other package
         "tree-sitter-cli",
+
+        -- Install Python requrement
+        { "pylint", auto_update = true },
       },
     },
   },

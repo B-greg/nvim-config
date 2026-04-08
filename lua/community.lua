@@ -32,6 +32,11 @@ return {
   { import = "astrocommunity.search.nvim-spectre" },
   { import = "astrocommunity.git.blame-nvim", lazy = true },
   { import = "astrocommunity.git.git-blame-nvim", lazy = true },
+
+  -- Base pack with basedpyright and ruff
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python.basedpyright", enabled = false },
+  { import = "astrocommunity.pack.python.ruff", enabled = false },
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",
