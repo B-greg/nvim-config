@@ -15,8 +15,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
--- Enable icons globally (used by various plugins)
-vim.g.icons_enabled = true
 -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore
