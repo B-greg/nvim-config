@@ -1,5 +1,3 @@
-local utils = require "utils"
-
 return {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
