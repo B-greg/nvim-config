@@ -37,6 +37,13 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.python.basedpyright", enabled = false },
   { import = "astrocommunity.pack.python.ruff", enabled = false },
+
+  -- IA tools
+  {
+    import = "astrocommunity.ai.sidekick-nvim",
+    lazy = true,
+  },
+
   -- Configure flutter-tools
   {
     "akinsho/flutter-tools.nvim",

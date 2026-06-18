@@ -115,6 +115,9 @@ return {
         ["<leader>apo"] = { '<cmd>lua require("CopilotChat").open()<CR>', desc = "Open Copilot Chat" },
         ["<leader>apm"] = { '<cmd>lua require("CopilotChat").select_model()<CR>', desc = "Select Model" },
         ["<leader>apr"] = { '<cmd>lua require("CopilotChat").reset()<CR>', desc = "Reset the Chat" },
+
+        -- Toogle spell checking
+        ["<leader>ts"] = { "<cmd>setlocal spell!<CR>", desc = "Toggle Spell Check" },
       },
     },
   },

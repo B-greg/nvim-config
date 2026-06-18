@@ -1,31 +1,29 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 local utils = require "utils"
-
-local win_opts = {
-  position = "right",
-  width = 0.35,
-  wo = { winbar = "Claude Code" },
-}
-
----@param cmd string
----@param opts? table
-local function claude_toggle(cmd, opts) require("snacks.terminal").toggle(cmd, opts) end
-
----@param cmd string
----@param opts? table
-local function claude_open(cmd, opts) require("snacks.terminal").open(cmd, opts) end
 
 return {
   "folke/snacks.nvim",
+  opts = {
+    styles = {
+      claude_code = {
+        bo = { filetype = "claude_code" },
+        wo = { winbar = "Claude Code" },
+        position = "right",
+        width = 0.35,
+      },
+    },
+  },
   keys = {
     { "<leader>aC", desc = utils.get_icon("", "CC", 1) .. "Claude Code" },
     {
       "<leader>aCt",
-      function() claude_toggle("claude", { win = win_opts }) end,
+      function() require("snacks").terminal.toggle("claude", { style = "claude_code" }) end,
       desc = "Toggle Claude Code",
     },
     {
       "<leader>aCo",
-      function() claude_open("claude", { win = win_opts }) end,
+      function() require("snacks").terminal("claude", { style = "claude_code" }) end,
       desc = "Open Claude Code",
     },
     {
@@ -33,7 +31,7 @@ return {
       function()
         local lines = vim.fn.getline(vim.fn.line "'<", vim.fn.line "'>")
         local selection = table.concat(lines, "\n")
-        claude_open("claude", { win = win_opts })
+        require("snacks").terminal("claude", { style = "claude_code" })
         if selection ~= "" then
           vim.defer_fn(function()
             local term_buf = vim.fn.bufnr "claude_code"
